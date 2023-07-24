@@ -1,0 +1,50 @@
+.footer-container {
+  width: 100%;
+  display: flex;
+  padding: 1rem 6rem;
+  background-color: rgb(14, 11, 25);
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  .copyright-info {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: white;
+  }
+  .social-icon-container {
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .social-icon a {
+      cursor: pointer;
+      color: #fff;
+    }
+  }
+}
+
+/*============== Responsive Tablet Media ============*/
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    .social-icon{
+      gap: 20px;
+    }
+  }
+}
+
+/*============== Responsive Phone Media ============*/
+
+// @media screen and (max-width: 375px) {
+//   .footer-container {
+//     height: 80px;
+//     gap: 10px;
+//   }
+// }

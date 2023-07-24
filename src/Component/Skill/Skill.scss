@@ -1,0 +1,106 @@
+.skill-main-container {
+  margin: 5rem 6rem;
+ 
+  span {
+    text-align: center;
+  }
+  hr{
+    width: 20%;
+  }
+  .skill-container {
+    box-shadow: orange -0.02px -0.02px 2px 2px;
+    margin-top: 2.5rem;
+    border-radius: 15px;
+    padding: 3rem 1rem ;
+    .skill-cards {
+      text-align: center;
+      display: flex;
+      padding: 0px 9rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      .skill-card-bg {
+        width: 30%;
+        background-color: #161639;
+        border-radius: 8px;
+        box-shadow: rgba(177, 173, 173, 0.15) 5px 5px -15px -15px;
+        h2{
+          margin-top: 10px;
+          color:white;
+        }
+        .skill-card {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          margin-top: 30px;
+          margin-bottom: 1rem;
+          .outer {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 10px solid orange;
+            background-color: black;
+            .inner {
+              text-align: center;
+              align-items: center;
+              justify-content: center;
+              display: flex;
+              font-size: 25px;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ============= Responsiv  Media ==========*/
+
+@media screen and (max-width: 768px) {
+  .skill-main-container {
+    margin: 2rem 1rem;
+    margin-top: 5rem;
+    hr{
+      width: 50%;
+    }
+    .skill-container {
+
+      .skill-cards {
+        gap:2rem;
+
+        padding: 0px;
+        .skill-card-bg {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+/* ============= Responsiv Phone Media ==========*/
+
+// @media screen and (max-width: 375px) {
+//   .skill-main-container {
+//     //   border:2px solid red;
+//     margin: 30px 15px;
+//     .skill-container {
+//       padding: 0px;
+//       .skill-cards {
+//         // margin-top: 50px;
+//         .skill-card-bg {
+//           max-width: calc(100% - 0px);
+//          width:100%;
+//           // height: 250px;
+//           // border: 2px solid red;
+//         }
+//       }
+//     }
+//   }
+// }

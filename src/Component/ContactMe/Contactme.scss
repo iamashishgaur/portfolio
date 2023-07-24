@@ -1,0 +1,134 @@
+.contact-main-container {
+  margin: 5rem 6rem;
+  color: black;
+  span {
+    text-align: center;
+    svg {
+      margin: auto 0;
+    }
+
+  }
+  hr{
+    width:20%;
+  }
+  .contant-container {
+    box-shadow: orange -0.02px -0.02px 2px 2px;
+    border-radius: 15px;
+    padding: 2rem 5rem;
+    display: flex;
+    margin-top: 2.5rem;
+    justify-content: center;
+    .contact-image {
+      width: 50%;
+      // border: 1px solid red;
+      height: auto;
+      img {
+        height: 100%;
+        width: 100%;
+        border-radius: 15px 0px 0px 15px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+    .contact-form {
+      width: 50%;
+      // border: 1px solid red;
+      border-radius: 0px 15px 15px 0px;
+      .form {
+        padding: 5px 25px;
+        .input {
+          gap: 25px;
+        }
+        input {
+          font-size: 20px;
+          width: 100%;
+          padding: 15px;
+          border: 1.5px solid orange;
+          outline: none;
+          border-radius: 10px;
+        }
+        textarea {
+          width: 100%;
+          margin-top: 10px;
+          padding: 15px 15px 0px 15px;
+          font-size: 20px;
+          border: 1.5px solid orange;
+          outline: none;
+          border-radius: 10px;
+        }
+        .email {
+          width: 100%;
+          padding: 15px;
+          border-radius: 10px;
+          font-size: 20px;
+          margin-top: 8px;
+        }
+        .message-btn {
+          width: 50%;
+          border-radius: 15px;
+          font-size: 18px;
+          padding: 15px;
+          border: none;
+          outline: none;
+          font-weight: 600;
+          margin-top: 10px;
+          cursor: pointer;
+          background-color: orange;
+          &:hover {
+            background-color: rgb(245, 187, 15);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ======== Responsive Media 768px==========*/
+
+@media screen and (max-width: 768px) {
+  .contact-main-container {
+    margin: 2rem 1rem;
+    margin-top: 5rem;
+    hr{
+      width:70%;
+    }
+    .contant-container {
+      width: 100%;
+      padding: 0;
+      margin-top: 4.5rem;
+      .contact-image {
+        display: none;
+      }
+      .contact-form{
+        width: 100%;
+        padding: 2.5rem 0;
+        .form{
+          padding: 0rem 1rem;
+        }
+      }
+    }
+  }
+}
+
+/* ======== Responsive Tablet Media 375==========*/
+
+// @media screen and (max-width: 375px) {
+//   .contact-main-container {
+//     margin: 0px 0px;
+//     width: 100%;
+//     .contant-container {
+//       padding: 0px;
+//       .contact-image{
+//         display: none;
+//       }
+//       .contact-form {
+//         width: 100%;
+//         .form{
+//           padding: 0px 15px;
+//           margin-bottom: 10px;
+//         }
+//       }
+//     }
+//   }
+// }

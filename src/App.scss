@@ -1,0 +1,39 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth; 
+}
+body{
+  background-color: #eeeeee ;
+  // color: white;
+  font-family: 'Times New Roman', Times, serif;
+  overflow-x: hidden;
+}
+a{
+  text-decoration: none;
+}
+hr{
+  width: 30%;
+  margin: 0 auto;
+  border: 2px solid orange;
+  border-radius: 50%;
+  margin-top: 0.3rem;
+}
+// .active{
+//   background-color:orange;
+//   border-radius: 5px;
+// }
+.btn{
+  padding: 0.6rem 1rem;
+  background-color: orange;
+  font-weight: 400;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: rgb(245, 187, 15);
+}

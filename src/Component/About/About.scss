@@ -1,0 +1,147 @@
+.about-main-container {
+  margin: 5rem 6rem;
+
+  .about-title {
+    text-align: center;
+    span {
+      color: orange;
+    }
+  }
+  .about-container {
+    box-shadow: orange -0.02px -0.02px 2px 2px;
+    border-radius: 15px;
+    padding: 4.5rem 1rem ;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2.5rem;
+    .about-img-container {
+      width: 45%;
+      display: flex;
+      justify-content: center;
+      .person-image {
+        width: 45%;
+        height: 90%;
+        border: 5px solid orange;
+        border-radius: 3px;
+        img{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          margin-top: 1rem;
+          margin-left: 1.5rem;
+          border-radius: 8px;
+        }
+      }
+    }
+    .about-info {
+      width: 55%;
+      .about_me {
+        text-align: center;
+        h4 {
+          font-size: 35px;
+          text-align: center;
+        }
+        span {
+          color: orange;
+          font-size: 30px;
+        }
+        p {
+          margin-top: 10px;
+          text-align: justify;
+          letter-spacing: 2px;
+          font-size: 20px;
+          line-height: 40px;
+          word-spacing: 2px;
+        }
+      }
+      .profile-btn {
+        margin-top: 3rem;
+        gap: 50px;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+/*=========== Responsive size ============*/
+
+@media screen and (max-width: 768px) {
+  .about-main-container {
+    margin: 2rem 1rem;
+    margin-top: 5rem;
+    hr{
+      width: 50%;
+    }
+    .about-container {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 1rem;
+      // gap: 25px;
+      .about-img-container {
+        width: 100%;
+        .person-image{
+          width: 65%;
+        }
+        
+      }
+      .about-info{
+        width: 100%;
+        margin-top: 3rem;
+        p {
+          line-height: 2.5rem;
+        }
+        .profile-btn {
+          gap: 10px;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          .btn{
+            padding: 0.6rem 3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*=========== Responsive Phone size ============*/
+
+// @media screen and (max-width:375px) {
+//   .about-main-container {
+//     max-width: 100%;
+//     height: auto;
+//     margin: 0px 0px;
+//     margin-top: 20px;
+//     .about-container {
+//       margin-top: 20px;
+//       flex-wrap: wrap;
+//       padding: 10px;
+//       .about-image {
+//         width: 100%;
+//         width: 350px;
+//         height: 450px;
+//         .person-image {
+//           border-radius: 15px;
+//           width: 100%;
+//           height: 100%;
+//         }
+//       }
+//       .about-info {
+//         width: 100%;
+//         margin-top: 15px;
+//         text-align: justify;
+//         .details-bio {
+//           margin-top: 15px;
+//           display: block;
+//           padding: 0px 15px;
+//         }
+//         .profile-btn {
+//           margin-top: 0px;
+//           width: 100%;
+//           font-size: 20px;
+//         }
+//       }
+//     }
+//   }
+// }
